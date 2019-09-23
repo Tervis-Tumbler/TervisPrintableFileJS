@@ -1,0 +1,10 @@
+{
+  "name": "@tervis/tervisprintablefilejs",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "TervisPrintableFileJS.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tervis-Tumbler/TervisPrintableFileJS"
+  }
+}
