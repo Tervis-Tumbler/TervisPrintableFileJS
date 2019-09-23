@@ -1,3 +1,7 @@
+import {
+    Remove_ObjectKeyWithEmptyOrNullValue
+} from '@tervis/tervisutilityjs'
+
 export function New_TervisPrintableFileURL ({
     $ColorInkImageURL,
     $WhiteInkImageURL,
@@ -11,18 +15,20 @@ export function New_TervisPrintableFileURL ({
     $EnvironmentName
 }) {
     var $Parameters = Object.fromEntries(
-        Object.entries({
-            $ColorInkImageURL,
-            $WhiteInkImageURL,
-            $OrderNumber,
-            $ProductSize,
-            $ProductFormType,
-            $CustomyzerProjectID,
-            $VuMarkID,
-            $PDFPresetName,
-            $RemoveDieCutterCalibrationLine,
-            $EnvironmentName
-        })
+        Object.entries(
+            Remove_ObjectKeyWithEmptyOrNullValue({
+                $ColorInkImageURL,
+                $WhiteInkImageURL,
+                $OrderNumber,
+                $ProductSize,
+                $ProductFormType,
+                $CustomyzerProjectID,
+                $VuMarkID,
+                $PDFPresetName,
+                $RemoveDieCutterCalibrationLine,
+                $EnvironmentName
+            })
+        )
         .map(
             ([$Name, $Value]) =>
             [$Name.slice(1), $Value]
