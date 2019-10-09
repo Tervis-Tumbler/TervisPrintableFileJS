@@ -5,7 +5,7 @@ import {
 export function New_TervisPrintableFileURL ({
     $ColorInkImageURL,
     $WhiteInkImageURL,
-    $OrderNumber,
+    $IDPrintedOnDecoration,
     $ProductSize,
     $ProductFormType,
     $CustomyzerProjectID,
@@ -19,7 +19,7 @@ export function New_TervisPrintableFileURL ({
             Remove_ObjectKeyWithEmptyOrNullValue({
                 $ColorInkImageURL,
                 $WhiteInkImageURL,
-                $OrderNumber,
+                $IDPrintedOnDecoration,
                 $ProductSize,
                 $ProductFormType,
                 $CustomyzerProjectID,
